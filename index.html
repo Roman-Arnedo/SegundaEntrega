@@ -4,9 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
+    <div class="cine">
+        <h1>Cine</h1>
+        <h2 class="bien">Bienvenidos <br> Que pelicula desea ver?</h2>
+    </div>
+
+    <div class="input">
+        <input type="text" id="nombre" placeholder="Nombre de la pelicula"/>
+        <button id="botonbuscar" class="buscar">BUSCAR</button>
+    </div>
+    <div class="cartelera">
+        <h2>Peliculas en cartelera:</h2>
+            <ul class="lista-c">
+                <li>Barbie</li>
+                <li>Oppenheimer</li>
+                <li>Tortugas Ninja: Caos Mutante</li>
+                <li>Blue Beetle</li>
+                <li>Megalodon 2</li>
+            </ul>
+    </div>
+
+    <div id="container">
+
+    </div>
+
+    <h2>Snacks</h2>
+
+    <button onclick="guardarValor()">Pedi tu snack!</button>
+
+    <button onclick="recuperarValor()">Recibir regalo</button>
+
+    <div id="resultado"></div>
     <script src="./js/main.js"></script>
 </body>
 </html>
