@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    scroll-behavior: smooth;
+}
 body{
     background: rgb(63,94,251);
     background: -moz-linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
@@ -7,23 +11,78 @@ body{
     text-align: center;
     position: relative;
 }
+.nav{
+    display: flex;
+    background-color: #ffff;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    transition: top 0.3s;
+    z-index: 10;
+}
+
+.img-c{
+    padding-left: 15px;
+    display: flex;
+    width: 50%;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-size: 22px;
+}
+
+.img1{
+    width: 100px;
+    height: 80px;
+    border-radius: 30px;
+}
+
+.divul{
+    padding-right: 15px;
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+}
+
+.ull{
+    display: flex;
+    list-style-type: none;
+    align-content: center;
+}
+
+.lii a{
+    padding: 10px;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 19px;
+    color: black;
+}
+
 .cine{
+    padding: 50px;
     display: flex;
     flex-direction: column;
     justify-items: center;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
+    margin-top: 150px;
 }
 
 .bien{
+    margin: 30px;
     text-align: center;
 }
 
 .input{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 #nombre{
@@ -38,6 +97,7 @@ body{
 }
 
 .buscar{
+    margin-top: 30px;
     height: 40px;
     width: 100px;
     border: 3px;
@@ -46,7 +106,6 @@ body{
     border-radius: 30px;
     text-align: center;
     line-height: 2;
-    margin-top: 10px;
     background-color: black;
     color: #ffff;
     cursor: pointer;
@@ -61,11 +120,12 @@ body{
     display: flex;
     justify-content: center;
     align-content: center;
+    margin-top: 60px;
+    margin-bottom: 100px;
 
 }
 .card{
     overflow: hidden;
-    margin: 10px;
     padding: 10px;
     border: 3px;
     border-style: solid;
@@ -78,23 +138,22 @@ body{
     font-size: 20px;
 }
 
-#btn-card{
+.btn-card{
     height: 40px;
     width: 100px;
     border: 3px;
-    border-color: #00d9ff;
     border-style: solid;
     border-radius: 30px;
     text-align: center;
     line-height: 2;
-    margin-top: 10px;
+    margin-top: 20px;
     background-color: black;
     color: #ffff;
     cursor: pointer;
     transition: transform 0.2s;
 }
 
-#btn-card:hover {
+.btn-card:hover {
     transform: scale(1.1);
 }
 
@@ -103,15 +162,17 @@ body{
     justify-content: center;
 }
 
-.cartelera{
+#cartelera{
+    margin: 15px;
+}
+.divs{
+    margin-top: 100px;
     padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     font-family: Arial, Helvetica, sans-serif;
-    position: absolute;
-    left: 80%;
     border: 3px;
     border-style: solid;
     border-radius: 30px;
@@ -119,11 +180,210 @@ body{
 }
 .lista-c{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     list-style-type: none;
+    flex-wrap: wrap;
     padding: 10px;
     line-height: 40px;
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
     font-size: 20px;
+}
+
+.imgcartel{
+    width: 300px;
+    height: 400px;
+    border-radius: 30px;
+    padding: 20px;
+}
+.btnCartel{
+    height: 40px;
+    width: 200px;
+    border: 3px solid black;
+    border-style: solid;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 2;
+    margin-top: 20px;
+    background-color: black;
+    color: #ffff;
+    cursor: pointer;
+    transition: transform 0.2s;
+    transition: .3s;
+    position: absolute;
+    bottom: 0;
+}
+.btnCartel:hover {
+    transform: scale(1.1);
+    background-color: #ffff;
+    color: black;
+}
+
+.liCartel{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.flexcombos{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 1000px;
+    gap: 30px;
+}
+.textC{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    gap: 30px;
+}
+
+.imgcomb{
+    width: 200px;
+    height: 200px;
+}
+
+#combos{
+    display: flex;
+    align-items: center;
+}
+
+.flexcombos{
+    margin-top: 100px;
+}
+
+.divcomb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid black;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: #ffff;
+    gap: 15px;
+}
+
+.textcomb{
+    width: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.combito{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.btncartcont{
+    display: flex;
+    justify-content: space-between;
+}
+.btncart{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    margin: 20px;
+    margin-top: 70px;
+    cursor: pointer;
+}
+
+.btnA{
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.divcart{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 30px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.divcart::-webkit-scrollbar {
+    width: .1px;
+}
+
+.divcart h4{
+    font-size: 25px;
+}
+
+.contenedorCarrito{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.divcarro{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: lightgray;
+    width: 100%;
+    border-radius: 1rem;
+
+}
+
+.contenedorImgCarro{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 100%;
+}
+.imgCarro{
+    max-width: 40%;
+    border-radius: 1rem;
+}
+
+.bi.bi-trash{
+color: red;
+}
+
+.disabled{
+    display: none;
+}
+
+.divCarrito-contenedor{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 200px;
+}
+
+.btnCombo{
+    width: 100%;
+    cursor:auto;
+}
+
+.botonEliminar{
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 2px solid red;
+    border-radius: 1rem;
+    background-color: lightgray;
+    color: red;
+    padding: .5rem;
+    transition: .4s;
+}
+
+.botonEliminar:hover{
+    transform: scale(1.1);
+    background-color: red;
+    color: lightgray;
 }

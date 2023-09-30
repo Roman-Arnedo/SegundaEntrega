@@ -4,40 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="cine">
+    
+    <nav class="nav">
+
+        <div class="img-c">
+        <img class="img1" src="./img/—Pngtree—cinema vector illustration_3704537.png" alt="Logo del cine">
+        <h2>Grand Cinema</h2>
+        </div>
+
+        <div class="divul">
+        <ul class="ull">
+            <li class="lii"><a href="#busqueda">Buscar</a></li>
+            <li class="lii"><a href="#cartelera">Cartelera</a></li>
+            <li class="lii"><a href="#combos">Combos para tu funcion</a></li>
+            <li class="lii"><a href="./carrito.html"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+              </svg></a></li>
+        </ul>
+        </div>
+
+    </nav>
+    
+    <div id="busqueda" class="cine" style="scroll-margin-top: 10ex;">
         <h1>Cine</h1>
-        <h2 class="bien">Bienvenidos <br> Que pelicula desea ver?</h2>
+        <h2 class="bien">Bienvenidos <br> Busca la ficha tecnica de tu pelicula</h2>
     </div>
 
     <div class="input">
         <input type="text" id="nombre" placeholder="Nombre de la pelicula"/>
         <button id="botonbuscar" class="buscar">BUSCAR</button>
     </div>
-    <div class="cartelera">
+
+    <div id="container">
+    </div>
+
+    <div id="cartelera" class="divs" style="scroll-margin-top: 10ex;">
         <h2>Peliculas en cartelera:</h2>
             <ul class="lista-c">
-                <li>Barbie</li>
-                <li>Oppenheimer</li>
-                <li>Tortugas Ninja: Caos Mutante</li>
-                <li>Blue Beetle</li>
-                <li>Megalodon 2</li>
+                <li class="liCartel"><img class="imgcartel" src="./img/bar.JPG" alt="barbie"> <button class="btnCartel" id="1">Agregar</button></li>
+                <li class="liCartel"><img class="imgcartel" src="./img/opp.JPG" alt="oppenheimer"><button class="btnCartel" id="3">Agregar</button></li>
+                <li class="liCartel"><img class="imgcartel" src="./img/tor.JPG" alt="tortugasninja"> <button class="btnCartel" id="2">Agregar</button></li>
+                <li class="liCartel"><img class="imgcartel" src="./img/blb.JPG" alt="blue beetle"> <button class="btnCartel" id="5">Agregar</button></li>
+                <li class="liCartel"><img class="imgcartel" src="./img/meg.JPG" alt="megalodon"> <button class="btnCartel" id="4">Agregar</button></li>
+                <li class="liCartel"><img class="imgcartel" src="./img/mon.JPG" alt="barbie"> <button class="btnCartel" id="6">Agregar</button></li>
+                <li class="liCartel"><img class="imgcartel" src="./img/inde.JPG" alt="Indestructibles"> <button class="btnCartel" id="7">Agregar</button></li>
+                <li class="liCartel"><img class="imgcartel" src="./img/paw.JPG" alt="Paw Patrol"> <button class="btnCartel" id="8">Agregar</button></li>
+                <li class="liCartel"><img class="imgcartel" src="./img/ast.JPG" alt="Asteroid City"> <button class="btnCartel" id="9">Agregar</button></li>
+                <li class="liCartel"><img class="imgcartel" src="./img/aft.JPG" alt="After"> <button class="btnCartel" id="10">Agregar</button></li>
             </ul>
     </div>
 
-    <div id="container">
+    <div id="combos" class="combito">
 
+        <div class="divs">
+        <h2>Combos para tu funcion</h2>
+        </div>
+
+        <div class="flexcombos">
+
+        <div class="textC">
+            <div class="divcomb">
+                <img class="imgcomb" src="./img/combop.JPG" alt="Imagen combo 1 pochoclos">
+                <div class="textcomb">
+                <h3>Combo pelicula</h3>
+                <p>Balde grande de pochoclos + dos gaseosas</p>
+                <button class="buscar btnCombo">Retiralo en el CandyShop</button>
+                </div>
+            </div>
+            <div class="divcomb">
+                <img class="imgcomb" src="./img/nachos.JPG" alt="Imagen combo 2 nachos">
+                <div class="textcomb">
+                <h3>Combo cheddar</h3>
+                <p>Nachos con cheddar + gaseosa</p>
+                <button class="buscar btnCombo">Retiralo en el CandyShop</button>
+                </div>
+            </div>
+            <div class="divcomb">
+                <img class="imgcomb" src="./img/choco.JPG" alt="Imagen combo 3 chocolates">
+                <div class="textcomb">
+                <h3>Combo chocolate</h3>
+                <p>Dos chocolates + gaseosa</p>
+                <button class="buscar btnCombo">Retiralo en el CandyShop</button>
+                </div>
+            </div>
+        </div>
+
+        </div>
     </div>
 
-    <h2>Snacks</h2>
-
-    <button onclick="guardarValor()">Pedi tu snack!</button>
-
-    <button onclick="recuperarValor()">Recibir regalo</button>
-
-    <div id="resultado"></div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
 </body>
 </html>
